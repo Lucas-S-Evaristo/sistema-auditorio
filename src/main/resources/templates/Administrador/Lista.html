@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleafe.org">
+<head>
+<meta charset="utf-8">
+<title>Lista De Animais</title>
+
+<style type="text/css">
+td {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	padding: 5px;
+}
+
+th {
+	background-color: black;
+	color: white;
+	padding: 12px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tabela {
+	border: 3px solid blue;
+	text-align: center;
+	margin: auto;
+	width: 80%;
+}
+
+a {
+	text-decoration: none;
+}
+</style>
+
+</head>
+<body>
+
+
+	<table border="1" class="tabela">
+		<tr>
+			<th>Id</th>
+			<th>Nome</th>
+			<th>Nif</th>
+			<th>Email</th>
+			<th>Alterar</th>
+			<th>Excluir</th>
+
+
+		</tr>
+
+
+		<!-- each é uma "estrutura" de repetição -->
+		<tr th:each="a: ${admin}">
+			<td th:text="${a.id}"></td>
+			<td th:text="${a.nome}"></td>
+			<td th:text="${a.nif}"></td>
+			<td th:text="${a.email}"></td>
+			<td><a th:href="@{/alterarAdmin(id=${a.id})}">Alterar</a></td>
+			<td><a th:href="@{/excluirAdmin(id=${a.id})}">Excluir</a></td>
+
+
+
+		</tr>
+
+
+	</table>
+
+</body>
+</html>
