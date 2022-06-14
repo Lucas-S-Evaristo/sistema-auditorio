@@ -61,8 +61,8 @@
 /* Card */
 .card {
 	width: 382px;
-	height: 615px;
-	margin: 25px;
+    height: 615px;
+    margin: 25px;
 	background-color: #fff;
 	border-radius: 20px;
 	overflow: hidden;
@@ -98,7 +98,7 @@
 
 .card-titulo {
 	font-size: 32px;
-	margin: 15px 0;
+	margin: 0;
 }
 
 .card-texto {
@@ -154,11 +154,10 @@
 
 .uploadhis{
     font-size: 16px;
-    background: #bbbbbb;
+    background: #bbbbbb85;
     border-radius: 50px;
     width: auto;
     outline: none;
-    margin-bottom: 20px;
 }
 ::-webkit-file-upload-button{
     color: white;
@@ -180,9 +179,6 @@
     outline: none;
     font-size: 19px;
 }
-.formhistorico{
-	margin-bottom: 21px;
-}
 .classExcluir{
 	color: white;
     background: #2884b2;
@@ -190,4 +186,12 @@
     outline: none;
     font-size: 19px;
     border-radius: 5px;
+}
+.pcard {
+	font-size: 17px;
+    width: auto;
+    margin: 0 auto;
+    background: #80808073;
+    border-radius: 5px;
+    margin: 5px;
 }

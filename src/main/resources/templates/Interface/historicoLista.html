@@ -85,7 +85,7 @@
 					</div>
 				</div>
 			</nav>
-			<br> <br>
+			
 			<h1 class="bodyH1">Histórico de Eventos</h1>
 			<br>
 			<div class="containernovo">
@@ -99,8 +99,11 @@
 
 					<!-- card-body -->
 					<div class="card-body">
+						<p class="pcard">Título da Reserva:</p>
 						<h2 th:text="${lista.title}" class="card-titulo"></h2>
+						<p class="pcard">Data e Hora de Início:</p>
 						<p th:text="${#temporals.format(lista.start)}" class="card-texto"></p>
+						<p class="pcard">Data e Hora do Fim:</p>
 						<p th:text="${#temporals.format(lista.end)}" class="card-texto"></p>
 					</div>
 					<!-- card-body -->
